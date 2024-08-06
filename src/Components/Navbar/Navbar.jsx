@@ -1,5 +1,6 @@
 import React from 'react'
 import './Navbar.css'
+
 import logo from '../Assets/logo.png'
 import cart_icon from '../Assets/cart_icon.png'
 
@@ -11,7 +12,7 @@ export default function Navbar() {
           <p>EverShop</p>
         </div>
         <ul className="nav-menu">
-          <li>Shop</li>
+          <li>Shop <hr/></li>
           <li>Men</li>
           <li>Women</li>
           <li>Kids</li>
@@ -19,6 +20,7 @@ export default function Navbar() {
         <div className="nav-login-cart">
           <button>Login</button>
           <img src={cart_icon} alt="Cart" />
+          <div className="nav-cart-count">0</div>
         </div>
     </div>
   )
